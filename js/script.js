@@ -9,14 +9,15 @@ let finalCost
 
 if(agePass < 18){
   finalDiscount = ticketPrice * (20 /100);
-} 
+}
 if(agePass >= 65){
   finalDiscount = ticketPrice * (40/100);
 }
 console.log("Lo sconto da applicare all'importo è di", finalDiscount);
 
 finalCost = ticketPrice - finalDiscount
-console.log("Il prezzo finale del biglietto viene", finalCost);
+console.log("Il prezzo finale del biglietto viene", finalCost.toFixed(2));
+
 
 
 
